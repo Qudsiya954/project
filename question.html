@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>questions</title>
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+ 
+<div class="container">
+     <!-- popupinfo  -->
+  <div class="quiz-info">
+    <h4 class="heading">Please enter the below details:</h4>
+    <form id="child-info" class="settings">
+      <label for="child-name">Your Name:</label>
+      <input type="text" id="child-name" required>
+    
+      <label for="child-age">Your Age:</label>
+      <select  id="child-age" required>
+        <option value=" "></option>
+        <option value="60 above">60 above</option>
+        <option value="18-60 years">18-60 years</option>
+        <option value="14-17 years">14-17 years</option>
+        <option value="10-13 years">10-13 years</option>
+        <option value="7-9 years">7-9 years</option>
+        <option value="4-6 years">4-6 years</option>
+      </select>          
+      <label for="diet">Diet Type:</label>
+    <div class="radio-group">
+          <input type="radio" id="veg diet-type" name="diet" value="veg" required>
+          <label for="veg">Vegetarian</label>
+      
+          <input type="radio" id="non-veg diet-type" name="diet" value="non-veg" required>
+          <label for="non-veg">Non-Vegetarian</label>
+          </div>
+      </form>
+      <div class="popup-button">
+        <a href="quiz.html" class="info-btn exit-button">Exit Quiz</a>
+     <a href="#" class="info-btn start">Start</a>
+    </div>
+    
+    
+    </div>
+        <!-- popup info over-->
+
+
+
+        
+         <!-- question start  -->
+          <!-- quiz section starts -->
+     <div class="quiz hide">
+        <div class="question-wrapper">
+         <div class="number">
+          Question <span class="current">1</span>
+          <span class="total">/10</span>
+          <div class="question">This is a Question</div>
+         </div>
+         <div class="answer-wrapper">
+          <div class="answer selected">
+            <span class="text">Answer</span>
+            <span class="checkbox">
+            <span class="icon">✓</span>  
+            </span>
+          </div>
+             </div>
+                 <div class="answer-wrapper">
+                  <div class="answer selected">
+                    <span class="text">Answer</span>
+                    <span class="checkbox">
+                    <span class="icon">✓</span>  
+                    </span>
+            </div>
+          </div>
+          <div class="answer-wrapper">
+            <div class="answer selected">
+              <span class="text">Answer</span>
+              <span class="checkbox">
+              <span class="icon">✓</span>  
+              </span>
+      </div>
+    </div>
+    <div class="answer-wrapper">
+      <div class="answer selected">
+        <span class="text">Answer</span>
+        <span class="checkbox">
+        <span class="icon">✓</span>  
+        </span>
+</div>
+</div>
+               
+                   
+            <div class="question-btn">
+        <button type="button" class="btn-submit q-btn">Submit</button>
+        <button class="next-btn q-btn">Next</button>
+            </div>
+        
+    </div>
+   </div>
+
+ <!-- results  start -->
+ <div class="end-screen hide">
+  <h2 class="result-text">Quiz Result!</h2>
+  <div class="percentage-container">
+    <div class="circular-progrees">
+      <span class="progress-value">0%</span>
+    </div>
+    <span class="score-text">Your score 0 out of 30</span>
+    <p class="comment score-text">Poorly nutritious</p>
+  </div>
+  <div class="buttons">
+ 
+ <button class="try-again">Try Again</button>
+ <button class="next-result">Next</button>
+  </div>
+  </div>
+ 
+
+
+</div>
+  
+    <script src="first.js"></script>
+</body>
+</html>
